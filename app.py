@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   date = str(datetime.now())
+   date = str(datetime.now()).split()[0]
    return render_template('index.html', date=date)
   
   
