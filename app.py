@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
    date = str(datetime.now())
-   return render_template('index.html', date)
+   return render_template('index.html', date=date)
   
   
 if __name__ == '__main__':
